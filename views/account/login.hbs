@@ -1,0 +1,65 @@
+<div class="external__main">
+  <div class="auth__content">
+    <main class="auth__main">
+      <div class="auth__header">
+        <div class="logo-container">
+          <a href="/">
+            <img alt="Cora Logo" src="/images/cora-logo.png" />
+          </a>
+        </div>
+      </div>
+      <div class="headings">
+        <h2>Log in to your account</h2>
+      </div>
+      <div class="auth__content">
+        <div id="error-box"></div>
+          <div id="success-box"></div>
+        <form action="#" autocomplete="off" class="login__form">
+          <div class="input__wrap">
+            <label for="email" class="screen-reader-only">Email Address</label>
+            <input
+              autocomplete="off"
+              name="email"
+              placeholder="Email"
+              type="email"
+              required="true"
+              value=""
+            />
+          </div>
+          <div class="input__wrap" style="position: relative;">
+            <label for="password" class="screen-reader-only">Password</label>
+            <input
+              autocomplete="off"
+              name="password"
+              placeholder="Password"
+              type="password"
+              maxlength="50"
+              required=""
+              value=""
+            />
+          </div>
+          <div class="forgot-text" aria-hidden="true"><a
+              href="/accounts/forgot-password"
+            >Forgot Password?</a></div>
+          <div class="btn-wrapper mt-5">
+            <button
+              class="btn-kpy --full-blue btn-submit"
+              type="submit"
+              disabled=""
+            >Log in</button>
+
+            <div class="grey-text mt-3">If you don’t have an account
+              <a class="btn-kpy btn--link" href="/accounts/create-account">
+                <span class="link-text">Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+<div class="signal">
+  {{>_toast_header}}
+</div>
+<script src="/js/validators/login.js"></script>

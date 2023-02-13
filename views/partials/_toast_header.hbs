@@ -1,0 +1,11 @@
+{{#if errors}}
+  {{#each errors}}
+    <p class="errors" style="display:none">{{this}}</p>
+  {{/each}}
+{{/if}}
+
+{{#if success}}
+  {{#each success}}
+    <p class="success" style="display: none;">{{this}}</p>
+  {{/each}}
+{{/if}}

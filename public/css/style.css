@@ -1,0 +1,72 @@
+@font-face {
+  font-family: euclidcircularb;
+  src: url("/fonts/euclid-circularb-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: euclidcircularb;
+  src: url("/fonts/euclid-circularb-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: euclidcircularb;
+  src: url("/fonts/euclid-circularb-semibold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font: "euclidcircularb", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 400 14px/1.2 var(--font);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+.__container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

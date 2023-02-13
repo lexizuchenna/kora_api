@@ -1,0 +1,479 @@
+<div class="wrap" id="wrap">
+        <asside class="aside">
+            <div class="aside__logo-row">
+                <img src="/images/user/aside/Logo.svg" alt="logo" class="aside__logo">
+                <div class="aside__logo-text">Pelio</div>
+            </div>
+            <nav class="aside__nav">
+                <ul class="aside__menu">
+                    <li class="aside__menu-item aside__menu-item_active" id="aside__dashboard">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">Dashboard</div>
+                    </li>
+                    <li class="aside__menu-item">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">My wallet</div>
+                    </li>
+                    <li class="aside__menu-item">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">payment</div>
+                    </li>
+                    <li class="aside__menu-item">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">Invoice</div>
+                    </li>
+                    <li class="aside__menu-item">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">setting</div>
+                    </li>
+                    <li class="aside__menu-item">
+                        <div class="aside__menu-item-logo"></div>
+                        <div class="aside__menu-item-text">Transactions</div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="aside__footer">
+                <h3 class="aside__footer-headline">Payment Admin Dashboard</h3>
+                <div class="aside__footer-text"> &copy; 2010-2021 All rights reserved.</div>
+                <div class="aside__footer-text">Made by ❤️ Md Shamim Hossain</div>
+            </div>
+        </asside>
+        <header class="header">
+            <div class="header__burger" id="header__burger">
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+            </div>
+            <div class="dashboard-logo">
+                <div class="dashboard-logo-image">
+                    <div class="image-row">
+                        <div class="image-item"></div>
+                        <div class="image-item"></div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-item"></div>
+                        <div class="image-item"></div>
+                    </div>
+                </div>
+                <h1 class="dashboard-logo__text">Dashboard</h1>
+            </div>
+            <div class="header__logo"></div>
+            <label class="header__label">
+                <input type="text" class="header__input" placeholder="Search Here...">
+            </label>
+            <div class="header__account-group">
+                <div class="header__messages-group">
+                    <div class="header__messages-icon"></div>
+                    <div class="header__messages-indicator">5</div>
+                </div>
+                <div class="header__messages-group">
+                    <div class="header__messages-icon"></div>
+                    <div class="header__messages-indicator">23</div>
+                    <div class="header__account-row header__account-row__guest">
+                        <div class="header__account-group-1">
+                            <div class="header__account-avatar"></div>
+                            <div class="header__account-column">
+                                <div class="header__user-name">Hi Shamim</div>
+                                <div class="header__email">engshamim@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="header__account-open">
+                            <div class="header__open-btn header__open-btn_login" id="header__loginBtn">
+                                <span class="header__open-item-logo"></span>
+                                <span class="header__open-item-text">Login</span>
+                            </div>
+                            <div class="header__open-btn header__open-btn_switch" id="header__switchBtn">
+                                <span class="header__open-item-logo"></span>
+                                <span class="header__open-item-text">Switch account</span>
+                            </div>
+                            <div class="header__open-btn header__open-btn_statistic" id="header__statisticBtn">
+                                <span class="header__open-item-logo"></span>
+                                <span class="header__open-item-text">My statistic</span>
+                            </div>
+                            <div class="header__open-btn header__open-btn_settings">
+                                <span class="header__open-item-logo"></span>
+                                <span class="header__open-item-text">Account settings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="dashboard" id="dashboard">
+                <div class="dashboard__row dashboard__row_adapt">
+                    <!-- first card  -->
+                    <div class="card" id="card1">
+                        <div class="card__image" style="background: #ffffff2c url('/images/user/cards/list.svg') no-repeat center;"></div>
+                        <div class="card__info">
+                            <h3 class="card__headline">0</h3>
+                            <div class="card__text">Total Invoices</div>
+                        </div>
+                        <div class="card__background">
+                            <div class="card__circle"></div>
+                            <div class="card__circle-mini"></div>
+                        </div>
+                    </div>
+                    <!-- second card  -->
+                    <div class="card" id="card2">
+                        <div class="card__image" style="background: #ffffff2c url('/images/user/cards/check.svg') no-repeat center;"></div>
+                        <div class="card__info">
+                            <h3 class="card__headline">0</h3>
+                            <div class="card__text">Paid Invoices</div>
+                        </div>
+                        <div class="card__background">
+                            <div class="card__circle"></div>
+                            <div class="card__circle-mini"></div>
+                        </div>
+                    </div>
+                    <!-- third card  -->
+                    <div class="card" id="card3">
+                        <div class="card__image" style="background: #ffffff2c url('/images/user/cards/close.svg') no-repeat center;"></div>
+                        <div class="card__info">
+                            <h3 class="card__headline">0</h3>
+                            <div class="card__text">Unpaid Invoices</div>
+                        </div>
+                        <div class="card__background">
+                            <div class="card__circle"></div>
+                            <div class="card__circle-mini"></div>
+                        </div>
+                    </div>
+                    <!-- fourth card  -->
+                    <div class="card" id="card4">
+                        <div class="card__image" style="background: #ffffff2c url('/images/user/cards/invoice.svg') no-repeat center;"></div>
+                        <div class="card__info">
+                            <h3 class="card__headline">0</h3>
+                            <div class="card__text">Total invoices Sent</div>
+                        </div>
+                        <div class="card__background">
+                            <div class="card__circle"></div>
+                            <div class="card__circle-mini"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__row dashboard__row_margin-top-40">
+                    <div class="transactions">
+                        <h3 class="transactions__headline">Lastest transactions</h3>
+                        <div class="transactions__place">
+                            <!-- transaction 1 -->
+                            <div class="transactions__row">
+                                <div class="transactions__group transactions__group-name">
+                                    <div class="transactions__logo transactions__logo_blue"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text transactions__text_blue">#KLA-237-393-950</div>
+                                        <h4 class="transactions__name">CodeAstrology.com</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__group">
+                                    <div class="transactions__amount-logo"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text">Amount</div>
+                                        <h4 class="transactions__name">$ 4,67,859</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__text transactions__time">5 min ago</div>
+                                <div class="transactions__group">
+                                    <button class="transactions__print-btn"></button>
+                                    <button class="transactions__more-btn">
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- transaction 2 -->
+                            <div class="transactions__row">
+                                <div class="transactions__group transactions__group-name">
+                                    <div class="transactions__logo transactions__logo_yellow"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text transactions__text_blue">#KLA-237-393-950</div>
+                                        <h4 class="transactions__name">HSJ Express.com</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__group">
+                                    <div class="transactions__amount-logo"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text">Amount</div>
+                                        <h4 class="transactions__name">$ 89,859</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__text transactions__time">5 min ago</div>
+                                <div class="transactions__group">
+                                    <button class="transactions__print-btn"></button>
+                                    <button class="transactions__more-btn">
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- transaction 3  -->
+                            <div class="transactions__row">
+                                <div class="transactions__group transactions__group-name">
+                                    <div class="transactions__logo transactions__logo_green"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text transactions__text_blue">#KLA-237-393-950</div>
+                                        <h4 class="transactions__name">Inventiveshamim.Inc</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__group">
+                                    <div class="transactions__amount-logo"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text">Amount</div>
+                                        <h4 class="transactions__name">$ 3,43,67,859</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__text transactions__time">5 min ago</div>
+                                <div class="transactions__group">
+                                    <button class="transactions__print-btn"></button>
+                                    <button class="transactions__more-btn">
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- transaction 4  -->
+                            <div class="transactions__row">
+                                <div class="transactions__group transactions__group-name">
+                                    <div class="transactions__logo transactions__logo_red"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text transactions__text_blue">#KLA-237-393-950</div>
+                                        <h4 class="transactions__name">Avadaforlife.Inc</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__group">
+                                    <div class="transactions__amount-logo"></div>
+                                    <div class="transactions__column">
+                                        <div class="transactions__text">Amount</div>
+                                        <h4 class="transactions__name">$ 2,07,859</h4>
+                                    </div>
+                                </div>
+                                <div class="transactions__text transactions__time">5 min ago</div>
+                                <div class="transactions__group">
+                                    <button class="transactions__print-btn"></button>
+                                    <button class="transactions__more-btn">
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                        <span class="transactions__btn-circle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions__footer">
+                            <div class="transactions__text transactions__showing">Showing <b class="transactions__text_bold">1-4</b> from <b class="transactions__text_bold">60</b> Data</div>
+                            <div class="transactions__pagination">
+                                <div class="transactions__pagination-item"></div>
+                                <div class="transactions__pagination-item transactions__pagination-item_active">1</div>
+                                <div class="transactions__pagination-item">2</div>
+                                <div class="transactions__pagination-item">3</div>
+                                <div class="transactions__pagination-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics">
+                        <h3 class="statistics__headline">Statistics</h3>
+                        <div class="statistics__canvas-container">
+                            <canvas height="400px" id="statistic-chart" class="statistics__canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__row dashboard__row_margin-top-40 dashboard__adaptive">
+                    <div class="dashboard__column">
+                        <div class="balance">
+                            <div class="balance__text balance__text_semi-bold">Balance</div>
+                            <div class="balance__row balance__row_adaptive">
+                                <div class="balance__headline">$ <span id="balance">0</span></div>
+                                <div class="balance__card-number">
+                                    <span class="balance__num balance__num_hided">&#9679; &#9679; &#9679; &#9679;</span>
+                                    <span class="balance__num balance__num_hided">&#9679; &#9679; &#9679; &#9679;</span>
+                                    <span class="balance__num balance__num_hided">&#9679; &#9679; &#9679; &#9679;</span>
+                                    <span class="balance__num">3456</span>
+                                </div>
+                            </div>
+                            <div class="balance__row">
+                                <div class="balance__group">
+                                    <div class="balance__column">
+                                        <div class="balance__text">Valid Thru</div>
+                                        <div class="balance__text balance__text_bold">03/23</div>
+                                    </div>
+                                    <div class="balance__column">
+                                        <div class="balance__text">Name</div>
+                                        <div class="balance__text balance__text_bold" id="balance__name">guest</div>
+                                    </div>
+                                </div>
+                                <div class="balance__group balance__group_overflow-hidden">
+                                    <div class="balance__circle"></div>
+                                    <div class="balance__circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions-chart">
+                            <div class="transactions-chart__column">
+                                <div class="transactions-chart__text">Transactions</div>
+                                <h2 class="transactions-chart__headline">0</h2>
+                            </div>
+                            <div class="transactions-chart__canvas">
+                                <canvas id="transactions-chart" height="80px" width="200px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail__headline">Balance details</div>
+                        <div class="detail__group">
+                            <span class="detail__text">Total Balance</span>
+                            <span class="detail__headline" id="totalBalance">$ 0</span>
+                        </div>
+                        <div class="detail__cards">
+                            <div class="detail__row">
+                                <div id="balance-card1" class="detail__card detail__card_blue">
+                                    <span class="detail__text">Last month</span>
+                                    <span class="detail__price">$ 0</span>
+                                </div>
+                                <div id="balance-card2" class="detail__card">
+                                    <span class="detail__text">Expense</span>
+                                    <span class="detail__price">$ 0</span>
+                                </div>
+                            </div>
+                            <div class="detail__row">
+                                <div id="balance-card3" class="detail__card">
+                                    <span class="detail__text">Taxes</span>
+                                    <span class="detail__price">$ 0</span>
+                                </div>
+                                <div id="balance-card4" class="detail__card">
+                                    <span class="detail__text">Debt</span>
+                                    <span class="detail__price">$ 0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity__group">
+                            <div class="activity__text activity__text_bold">Activity</div>
+                            <div class="activity__price">$ 48,284</div>
+                        </div>
+                        <div class="chart">
+                            <div class="chart__row">
+                                <div class="chart__column">
+                                    <div class="chart__value">287</div>
+                                    <div class="chart__container">
+                                        <div class="chart__inner"></div>
+                                    </div>
+                                    <div class="chart__label">Sun</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__value">312</div>
+                                    <div class="chart__container">
+                                        <div class="chart__inner"></div>
+                                    </div>
+                                    <div class="chart__label">Mon</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__value">176</div>
+                                    <div class="chart__container">
+                                        <div class="chart__inner"></div>
+                                    </div>
+                                    <div class="chart__label">Tue</div>
+                                </div>
+                            </div>
+                            <div class="chart__legend">
+                                <div class="chart__legend-item">
+                                    <div class="chart__color"></div>
+                                    <div class="chart__legend-text">Dolore sit amet</div>
+                                </div>
+                                <div class="chart__legend-item">
+                                    <div class="chart__color"></div>
+                                    <div class="chart__legend-text">Dolore sit amet</div>
+                                </div>
+                                <div class="chart__legend-item">
+                                    <div class="chart__color"></div>
+                                    <div class="chart__legend-text">Dolore sit amet</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {{!-- <section id="statistic" class="statisticpg">
+                <div class="statisticpg__row">
+                    <div class="statisticpg__card">
+                        <div class="statisticpg__image statisticpg__image_eye"></div>
+                        <div class="statisticpg__column">
+                            <div class="statisticpg__text statisticpg__text_bold" id="staticticpg-count">425 24</div>
+                            <div class="statisticpg__text statisticpg__text_regular">Count of login</div>
+                        </div>
+                    </div>
+
+                    <div class="statisticpg__card">
+                        <div class="statisticpg__image statisticpg__image_clock"></div>
+                        <div class="statisticpg__column">
+                            <div class="statisticpg__text statisticpg__text_bold" id="staticticpg-date">21.01.2022</div>
+                            <div class="statisticpg__text statisticpg__text_regular">Last login</div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- <div class="statisticpg__canvas">
+                    Visits for last days
+                    <canvas id="statistics-open-counter"></canvas> --}}
+                </div>
+            </section> --}}
+        </main>
+    </div>
+    {{!-- <div class="formWrap">
+        <div class="form__header">
+            <div class="form__logo">
+                <img src="/images/user/aside/Logo.svg" alt="logo" class="form__img_logo">
+                <div class="form__text_logo">Pelio</div>
+            </div>
+        </div>
+        <section class="form__register">
+            <h2 class="form__headline">Register</h2>
+            <label class="form__label">
+                First name
+                <input type="text" class="form__input" placeholder="First name" id="form__regFirstName">
+            </label>
+            <label class="form__label">
+                Last name
+                <input type="text" class="form__input" placeholder="Last name" id="form__regLastName">
+            </label>
+            <label class="form__label">
+                Create username
+                <input type="text" class="form__input" placeholder="Username" id="form__regUsername">
+            </label>
+            <label class="form__label">
+                Your email
+                <input type="email" class="form__input" placeholder="Email" id="form__regEmail">
+            </label>
+            <label class="form__label">
+                Date of birth
+                <input type="date" class="form__input" id="formDate">
+            </label>
+            <label class="form__label">
+                Create password (password must be longer then 8 chapters)
+                <input type="password" class="form__input" placeholder="Password" id="form__regPassword">
+            </label>
+            <label class="form__label">
+                Confirm password
+                <input type="password" class="form__input" placeholder="Confirm password" id="form__regPasswordConfirm">
+            </label>
+            <button class="form__btn" id="form__register-btn">Register</button>
+            <span class="form__span">
+                Already have an account? <button class="form__btn_underline" id="form__goToLogin">Login</button>
+            </span>
+        </section>
+        <section class="form__login">
+            <h2 class="form__headline">Login</h2>
+            <label class="form__label">
+                <input type="email" class="form__input" placeholder="Email or username" id="form__logUser">
+            </label>
+            <label class="form__label">
+                <input type="password" class="form__input" placeholder="Password" id="form__logPassword">
+            </label>
+            <button class="form__btn" id="form__login-btn">Login</button>
+            <span class="form__span">
+                Haven't got an account? <button class="form__btn_underline" id="form__goToRegister">Register now</button>
+            </span>
+        </section>
+    </div> --}}
+    <script src="/js/home_user_kora.js"></script>
+    {{!-- <script src="/js/charts_user_kora.js"></script> --}}

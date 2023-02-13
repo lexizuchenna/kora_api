@@ -1,0 +1,405 @@
+:root {
+  --primary-color: #ff5f00;
+  --secondary-color: #00092c;
+  --link-color: #b20600;
+  --grey-color: #eeeeee;
+  --white-color: #ffffff;
+}
+
+a.active {
+  font-weight: 600;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all ease-in-out 0.3s;
+}
+
+a.secondary-bg:hover {
+  background-color: var(--grey-color);
+  color: var(--secondary-color);
+}
+
+a.primary-bg:hover {
+  background-color: var(--grey-color);
+  color: var(--primary-color);
+}
+
+figure img {
+  height: 100%;
+}
+
+.primary-bg {
+  background-color: var(--primary-color);
+  color: var(--grey-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.grey-bg {
+  background-color: var(--grey-color);
+  color: var(--secondary-color);
+}
+
+.head__title {
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--secondary-color);
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.head__title h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+header {
+  padding: 15px 0;
+}
+
+.logo {
+}
+
+.logo figure {
+  height: 50px;
+}
+
+nav {
+}
+
+nav ul {
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 0 0 40px;
+}
+
+nav ul li a {
+  color: var(--link-color);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+a.link:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  min-height: calc(100vh - 65px);
+  background: url("/images/main-bg.jpg") no-repeat;
+  background-size: 130%;
+  background-position: center bottom;
+  position: relative;
+  color: var(--white-color);
+}
+
+main .__container {
+  z-index: 5;
+  position: absolute;
+  inset: 0;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main__cover {
+  background-color: var(--secondary-color);
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+main .text__wrapper {
+  margin: -50px 0 20px 0;
+  max-width: 700px;
+}
+
+main h1,
+main h2 {
+  font-size: 60px;
+  text-shadow: -1px 1px 6px rgba(0, 9, 44, 0.54);
+}
+
+main p {
+  font: normal 500 22px/1.4em var(--font);
+}
+
+main .link__wrapper a {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.about {
+  padding: 50px 0 40px 0;
+}
+
+.about h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+h2 span {
+  color: var(--primary-color);
+}
+
+.about p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+.about figure {
+  height: 400px;
+}
+
+.about .__flex {
+  align-items: flex-start;
+}
+
+.plan {
+}
+
+.lead {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding-right: 50%;
+}
+
+.plan__card {
+  padding: 20px;
+}
+
+.plan__card figure {
+  height: 50px;
+}
+
+.plan h4 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.plan .text__wrapper p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.price__tag {
+  padding: 15px 7px;
+}
+
+.price__tag p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+p sup {
+  color: var(--link-color);
+  margin-left: 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.plan__card ul {
+  margin: 30px 0;
+}
+
+.plan__card li {
+  margin: 16px 0;
+}
+
+.plan__card .good::before {
+  content: url("/images/check.png");
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 10px;
+  margin-right: 5px;
+}
+.plan__card .bad::before {
+  content: url("/images/cancel.png");
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 10px;
+  margin-right: 5px;
+}
+
+.plan__card .link__wrapper {
+  margin-top: 50px;
+}
+
+.testimonial {
+  min-height: 600px;
+  background-image: url("/images/testimonial.jpg");
+  background-size: 90%;
+  position: relative;
+
+  margin: 50px 0;
+
+  
+}
+
+.testimonial .__container {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  padding-top: 100px;
+}
+
+.testimonial .head__title {
+  border-bottom-color: var(--white-color);
+  color: var(--white-color);
+}
+
+.testimonial h2 {
+  font-size: 50px;
+  color: var(--white-color);
+}
+
+.testimonial__cover {
+  background-color: var(--secondary-color);
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.testimonial__card {
+  padding: 80px 70px;
+  background-color: var(--secondary-color);
+  margin-top: 100px;
+}
+
+.testimonial__card figure {
+  height: 70px;
+}
+
+.testimonial__card p {
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.testimonial__card .text__wrapper {
+  margin-left: 20px;
+}
+
+p.testimonial__title {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+span.role {
+  color: var(--primary-color);
+}
+
+.partners {
+  padding: 100px 0 20px 0;
+}
+
+.partners .__flex {
+  padding: 50px 150px 20px 150px;
+
+}
+
+.partners figure {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.partners figure:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+footer {
+  padding: 50px 100px;
+  background-color: var(--secondary-color);
+}
+
+footer .__flex {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.social__icons {
+  margin: 35px 0;
+}
+
+.social__icons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 10px;
+
+  /* background-color: var(--grey-color); */
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  transition: all ease-in-out 0.5s;
+}
+
+.social__icons a:hover i {
+  transition: all ease-in-out 0.5s;
+  color: var(--primary-color);
+}
+
+.social__icons a:hover {
+  background-color: var(--grey-color);
+  transition: all ease-in-out 0.5s;
+  border: 1px solid var(--grey-color);
+}
+
+.social__icons i {
+  font-size: 20px;
+  color: var(--grey-color);
+  transition: all ease-in-out 0.5s;
+}
+
+.rights p {
+  color: var(--grey-color);
+}
+
+.item__two p {
+  line-height: 2;
+  font-size: 16px;
+  color: var(--grey-color);
+}
+
+.item__title h3 {
+  color: var(--white-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin: 13px 0;
+}
+
+footer ul li a {
+  transition: all ease-in-out 0.5s;
+  color: var(--grey-color);
+  font-size: 16px;
+}
+
+footer ul li a:hover {
+  transition: all ease-in-out 0.5s;
+  color: var(--primary-color);
+}
+
+@media (max-width: 414px) {
+  body {
+    /* display: none; */
+  }
+}

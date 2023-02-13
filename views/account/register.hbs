@@ -1,0 +1,190 @@
+<div class="external__main">
+  <div class="auth__content">
+    <div class="auth__body">
+      <div class="logo__section">
+        <a href="/">
+          <img alt="Kora Logo" src="/images/cora-logo.png" />
+        </a>
+        <h2>Sign up your<br />business on Cora</h2>
+        <p>Create your business account effortlessly.</p>
+      </div>
+      <div class="form__section"><div class="mid-section">
+          <h2>Business Information</h2>
+          <p>This information would be used to create your account.</p>
+          <div id="error-box"></div>
+          <div id="success-box"></div>
+          <form action="/accounts/create-account" method="POST">
+            <div class="input_group">
+              <div class="input__wrap">
+                <label for="first_name" class="screen-reader-only">First Name</label>
+                <input
+                  autocomplete="off"
+                  maxlength="100"
+                  name="first_name"
+                  type="text"
+                  required="true"
+                  value=""
+                />
+              </div>
+              <div class="input__wrap">
+                <label for="last_name" class="screen-reader-only">Last Name</label>
+                <input
+                  autocomplete="off"
+                  maxlength="100"
+                  name="last_name"
+                  type="text"
+                  required="true"
+                />
+              </div>
+            </div>
+            <div class="input__wrap">
+              <label for="bname" class="screen-reader-only">Email Address</label>
+              <input
+                name="email"
+                autocomplete="off"
+                type="text"
+                required="true"
+              />
+            </div>
+            <div class="input__wrap">
+              <label for="email" class="screen-reader-only">Username</label>
+              <input
+                maxlength="100"
+                name="username"
+                autocomplete="off"
+                type="text"
+                required="true"
+              />
+            </div>
+
+            <div class="input__wrap phone-class mb-3">
+              <label for="Select country" class="screen-reader-only">Phone
+                Number</label>
+              <div class="react-tel-input">
+                <input
+                  class="form-control reg-phone-input false"
+                  placeholder="234-123-456-7890"
+                  type="tel"
+                  name="phone_number"
+                  required="true"
+                  value="234"
+                  maxlength="16"
+                />
+                <div class="flag-dropdown reg-dropdown-btn false">
+                  <div
+                    class="selected-flag"
+                    title="Nigeria: + 234"
+                  >
+                    <div class="flag ng">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input__wrap mb-3">
+              <label for="password" class="screen-reader-only">Password</label>
+              <input
+                name="password"
+                maxlength="100"
+                autocomplete="off"
+                type="password"
+                required="true"
+                value=""
+              />
+              <div class="password__strength mobile_bottom_space">
+                <p>Password must contain at least</p>
+                <div id="pass_length">
+                  <span style="color: red;">✓</span>
+                  <span style="color: red;">
+                    8 characters
+                  </span>
+                </div>
+                <div id="pass_caps">
+                  <span style="color: red;">✓</span>
+                  <span style="color: red;"> 1 upper case letter (A-Z)</span>
+                </div>
+                <div id="pass_small">
+                  <span style="color: red;">✓</span>
+                  <span style="color: red;">
+                    1 lower case letter (a-z)</span>
+                </div>
+                <div id="pass_special">
+                  <span style="color: red;">✓</span>
+                  <span style="color: red;">
+                    1 special character (*@#-!...)</span>
+                </div>
+                <div id="pass_number">
+                  <span style="color: red;">✓</span>
+                  <span style="color: red;">
+                    Must contain number</span>
+                </div>
+              </div>
+            </div>
+            <div class="input__wrap mb-3">
+              <label for="confirm_password" class="screen-reader-only">Confirm
+                Password</label>
+              <input
+                name="confirm_password"
+                autocomplete="off"
+                type="password"
+                required="true"
+                value=""
+              />
+              <div class="cpassword__strength" id="pass_confirm">
+                <span class="pl-1" style="color: red;">
+                  ✗ Must match your password
+                </span>
+              </div>
+            </div>
+            <div class="auth-check mt-3">
+              <input name="tandc" type="checkbox" value="" />
+              <div
+                class="check-label ml-2"
+                for="isLiveTxn"
+                style="text-align: left;"
+              >I agree to Kora's
+                <span class="link-text">
+                  <a
+                    class="btn--link"
+                    href="/terms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="margin: 0px 5px; text-decoration: none; font-size: 0.9rem;"
+                  >Terms &amp; Conditions</a>
+                </span>
+                and
+                <span class="link-text">
+                  <a
+                    class="btn--link"
+                    href="/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="margin: 0px 5px; text-decoration: none; font-size: 0.9rem;"
+                  >Privacy Policy.</a>
+                </span>
+              </div>
+            </div>
+            <div class="btn-wrapper mt-3">
+              <button
+                class="btn-kpy --full-blue btn-submit"
+                type="submit"
+                disabled=""
+              >Create Account</button>
+            </div>
+          </form>
+        </div>
+        <div class="right-section">
+          <p class="account-text">Already have an account?
+            <a class="link-text" href="/accounts/login">Log In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="signal">
+  {{>_toast_header}}
+</div>
+
+<script src="/js/validators/create-account.js"></script>
